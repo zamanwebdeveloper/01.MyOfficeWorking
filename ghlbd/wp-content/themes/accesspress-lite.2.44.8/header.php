@@ -81,7 +81,7 @@ $accesspresslite_settings = get_option( 'accesspresslite_options', $accesspressl
 		<!-- Track and Login Part Start Here -->
 	<div class="container color">	
 		<div class="row">		 
-			<form  id="frmtrack" action="shifa_up/shipment.php" method="post" style="padding-top:0px;" target="window.open('shifa_up/shipment.php','Tracking Info','status=1,toolbar=1,location=no')"> 
+			<form  id="frmtrack" action="ghlbd_up/shipment.php" method="post" style="padding-top:0px;" target="window.open('ghlbd_up/shipment.php','Tracking Info','status=1,toolbar=1,location=no')"> 
 				<div class="col-md-2">
 					<div class="form-group">
 					</br>
@@ -93,7 +93,7 @@ $accesspresslite_settings = get_option( 'accesspresslite_options', $accesspressl
 						 <button type="submit"  class="btn btn-primary">Track</button>
 					</div>
 			</form> 
-			<form name="the_form" id="frmlogin" method="post" action="shifa_up/index.php" target="_blank">
+			<form name="the_form" id="frmlogin" method="post" action="ghlbd_up/index.php" target="_blank">
 				<div class="col-md-2">
 					<div class="form-group">
 				

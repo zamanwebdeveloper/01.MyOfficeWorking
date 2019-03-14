@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 12, 2019 at 12:01 PM
+-- Generation Time: Mar 14, 2019 at 06:05 AM
 -- Server version: 5.6.21
 -- PHP Version: 5.6.3
 
@@ -15017,8 +15017,8 @@ INSERT INTO `shipment` (`serial`, `HAWB`, `origin`, `destination`, `media`, `AWB
 (16920, '101164', 'BANGLADESH', 'U.S.A', '1', '6160027134', '2019-03-04 19:13', 'AHASAN HABIB', 'KATHERINE NOOR STEPH', 1, 'Shipment Pick Up', '+8801789049066', '', '', '+18509807014', '', '3530 VICTORIA PARK ROAD #15\r\nJACKSONVILLE,\r\nFLORIDA 32216,\r\nUSA\r\n', '2019-03-04', '101164', '', 'Bangladesh', '01pcs', '1.00KG'),
 (16921, '101165', 'BANGLADESH', 'JAPAN ', '1', '4064704291', '2019-03-06 20:35', 'MD. ABDUL MOBIN ', 'RAHMAN MD ATAUR ', 1, 'Shipment Pick Up', '01515241568', '', '', '+8108058289550', '', 'NEZUMINOCHO-298, MINMAI WARD, HAMAMATSU, SHIZUOKA PREFECTURE 430-0838,JAPAN', '2019-03-11', '101165', '', 'Bangladesh', '01pcs', '0.200gm'),
 (16922, '101166', 'BANGLADESH', 'CANADA', '1', '5744209472', '2019-03-07 11:58', 'MAHBUBA FERDOUS ', 'MORSHED SIKDER ', 1, 'Shipment Pick Up', '+8801770511871', '', '62/E SYED GIASUDDIN RESIDENTIL ARIA,DHAKA-1000, BANGLADESH ', '+416 848 5650 ', '', '75 WELDRICK ROAD EAST,UNIT#847, RICHMOND HILL, ONL4COH9,CANADA.\r\n', '2019-03-12', '101166', '', 'Bangladesh', '01pcs', '0.200gm'),
-(16923, '101167', 'BANGLADESH', 'GERMANY', '1', '4064704873', '2019-03-07 15:58', 'MD.SHIPON AHAMED ', 'FACHHOCHSCHUL KIEL ', 1, 'Shipment Pick Up', '+8801794603460', '', 'KATASUR,(12/1,CHA) MOHAMMADPUR DHAKA-1207, BANGLADESH ', '+494312104830', '', 'STUDIENKOLLEG FACHHOCHSCHUL KIEL,SOKRATESPLATZ 4, 24149 KIEL, GERMANY \r\n', '2019-03-12', '101167', '', 'Bangladesh', '01pcs', '0.600gm'),
-(16924, '101168 ', 'BANGLADESH', 'GERMANY', '1', '4064704851', '2019-03-12 16:07', 'MD.SHIPON AHAMED', 'RUHR UNIVERSITY BOCH', 1, 'Shipment Pick Up', '+8801794603460', '', 'KATASUR,(12/1,CHA) MOHAMMADPUR DHAKA-1207, BANGLADESH ', '01740301579', '', 'GIRONDELLE 80, D-44799 BOCHUM, GERMANY ', '2019-02-12', '101168', 'Syed Zaman', 'Bangladesh', '01pcs', '0.500gm');
+(16923, '101167', 'BANGLADESH', 'GERMANY', '1', '4064704873', '2019-03-07 15:58', 'MD.SHIPON AHAMED ', 'FACHHOCHSCHUL KIEL ', 1, 'Shipment Pick Up', '+8801794603460', 'zamanwebdeveloper@gmail.com', 'KATASUR,(12/1,CHA) MOHAMMADPUR DHAKA-1207, BANGLADESH ', '+494312104830', '', 'STUDIENKOLLEG FACHHOCHSCHUL KIEL,SOKRATESPLATZ 4, 24149 KIEL, GERMANY \r\n', '2019-03-12', '101167', '', 'Bangladesh', '01pcs', '0.600gm'),
+(16924, '101168 ', 'BANGLADESH', 'GERMANY', '1', '4064704851', '2019-03-12 16:07', 'MD.SHIPON AHAMED', 'RUHR UNIVERSITY BOCH', 1, 'Shipment Pick Up', '+8801794603460', '', 'KATASUR,(12/1,CHA) MOHAMMADPUR DHAKA-1207, BANGLADESH ', '01740301579', 'zamanwebdeveloper@gmail.com', 'GIRONDELLE 80, D-44799 BOCHUM, GERMANY ', '2019-02-12', '101168', 'Syed Zaman', 'Bangladesh', '01pcs', '0.500gm');
 
 -- --------------------------------------------------------
 
@@ -15058,7 +15058,7 @@ CREATE TABLE IF NOT EXISTS `tracking` (
   `location` varchar(255) DEFAULT NULL,
   `pdate` varchar(255) DEFAULT NULL,
   `end_shipment` varchar(10) DEFAULT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=850 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=853 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tracking`
@@ -15620,7 +15620,10 @@ INSERT INTO `tracking` (`serial`, `sid`, `activity`, `location`, `pdate`, `end_s
 (846, '16900', 'SHIPMENT PICK-UP ', 'DHAKA, BANGLADESH', '2019-02-19 & 17:57', ''),
 (847, '16924', '', 'Dhaka', '2019-03-12 16:29', ''),
 (848, '16924', 'Delivered', 'Bangladesh', '2019-03-12 16:34', ''),
-(849, '16924', 'Delivered', 'Bangladesh', '2019-03-12 16:36', '');
+(849, '16924', 'Delivered', 'Bangladesh', '2019-03-12 16:36', ''),
+(850, '16919', 'Delivered', 'Bangladesh', '2019-03-12 17:12', ''),
+(851, '16923', 'Delivered', 'Bangladesh', '2019-03-12 17:14', ''),
+(852, '16924', 'Delivered', 'Bangladesh', '2019-03-14 11:00', 'sdlfjdsl');
 
 -- --------------------------------------------------------
 
@@ -15762,7 +15765,7 @@ MODIFY `serial` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 -- AUTO_INCREMENT for table `tracking`
 --
 ALTER TABLE `tracking`
-MODIFY `serial` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=850;
+MODIFY `serial` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=853;
 --
 -- AUTO_INCREMENT for table `tracking_dom`
 --
