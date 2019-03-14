@@ -9,21 +9,22 @@
 ?>
 <!DOCTYPE html> 
 <html <?php language_attributes(); ?>>
-
-<head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<!-- Bootstrap Core CSS -->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	
-	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<!--[if lt IE 9]>
-	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.min.js"></script>
-	<![endif]-->
-
-<?php wp_head(); ?>
-</head>
+	<head>
+		<meta charset="<?php bloginfo( 'charset' ); ?>">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<!-- Bootstrap Core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		
+		<link rel="profile" href="http://gmpg.org/xfn/11">
+		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+		<!--[if lt IE 9]>
+		<script src="<?php //echo get_template_directory_uri(); ?>/js/html5.min.js"></script>
+		<![endif]-->
+	<?php wp_head(); ?>
+	<style>
+		.color{color:blue}
+	</style>
+	</head>
 
 <body <?php body_class(); ?>>
 <?php
@@ -66,33 +67,19 @@ $accesspresslite_settings = get_option( 'accesspresslite_options', $accesspressl
 				
 				<?php } ?>
 			<div class="ak-search">
-					<a href="https://www.facebook.com/basl71"><img src="social-profiles/facebook.png" width="32" height="32" /></a>
-				<a href="https://twitter.com/BengalApparel"><img src="social-profiles/twitter.png" width="32" height="32" /></a>
-                <a href="https://www.linkedin.com/company/bengal-apparel-sourcing-limited--basl"><img src="social-profiles/linkedin.png" width="32" height="32" /></a>
-                <a href="https://www.youtube.com/channel/UCkl3BL9UnQ-vfSMHlCAONxQ"><img src="social-profiles/youtube.png" width="32" height="32" /></a>
+				<a href="https://www.facebook.com/basl71" target="_blank"><img src="social-profiles/facebook.png" width="32" height="32" /></a>
+				<a href="https://twitter.com/BengalApparel" target="_blank"><img src="social-profiles/twitter.png" width="32" height="32" /></a>
+                <a href="https://www.linkedin.com/company/bengal-apparel-sourcing-limited--basl" target="_blank"><img src="social-profiles/linkedin.png" width="32" height="32" /></a>
+                <a href="https://www.youtube.com/channel/UCkl3BL9UnQ-vfSMHlCAONxQ" target="_blank"><img src="social-profiles/youtube.png" width="32" height="32" /></a>
 				<a href="https://plus.google.com/b/108403791543949724292/108403791543949724292/posts"><img src="social-profiles/gplus.png" width="32" height="32" /></a>
                 <a href="https://www.pinterest.com/bengalapparel"><img src="social-profiles/pinterest.png" width="32" height="32" /></a>
 				<a href="#"><img src="social-profiles/rss.png" width="32" height="32" /></a>
-				</div>
+			</div>
 
 			</div><!-- .right-header -->
 		</div><!-- .ak-container -->
-  </div><!-- #top-header -->
-<div><marquee onMouseOut="this.start();" onMouseOver="this.stop();" scrollamount="1" scrolldelay="10" behavior="scroll" direction="left" truespeed style="background:#FFC;font-size:125%; color:#004162;" background color="Red" >“Rendering Technical Services for Brighter Future”</marquee></div>
-		
-		<nav id="site-navigation" class="main-navigation <?php do_action( 'accesspresslite_menu_alignment' ); ?>">
-			<div class="ak-container">
-            
-				<h1 class="menu-toggle"><?php _e( 'Menu', 'accesspresslite' ); ?></h1>
-
-				<?php wp_nav_menu( array( 
-				'theme_location' => 'primary' ) ); ?>
-				
-			</div><div style="background:#fff; height:5px; width:100%;"></div>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
-	<!-- Track and Login Part Start Here -->
-	<div class="container">	
+		<!-- Track and Login Part Start Here -->
+	<div class="container color">	
 		<div class="row">		 
 			<form  id="frmtrack" action="shifa_up/shipment.php" method="post" style="padding-top:0px;" target="window.open('shifa_up/shipment.php','Tracking Info','status=1,toolbar=1,location=no')"> 
 				<div class="col-md-2">
@@ -127,6 +114,27 @@ $accesspresslite_settings = get_option( 'accesspresslite_options', $accesspressl
 	</div>
 		<!-- Track and Login End -->
 
+  </div><!-- #top-header -->
+
+
+
+
+
+		
+		<nav id="site-navigation" class="main-navigation <?php do_action( 'accesspresslite_menu_alignment' ); ?>">
+		
+			<div class="ak-container">
+            
+				<h1 class="menu-toggle"><?php _e( 'Menu', 'accesspresslite' ); ?></h1>
+
+				<?php wp_nav_menu( array( 
+				'theme_location' => 'primary' ) ); ?>
+				
+			</div>
+			<div style="background:#fff; height:5px; width:100%;"></div>
+		</nav><!-- #site-navigation -->
+	</header><!-- #masthead -->
+	
 		
 
 	
