@@ -406,8 +406,8 @@ $panme=mysql_fetch_array($res);
 <br>
 
 <?php 
-$sql="select * from shipment where serial= '$serial'";
-$res=connect($sql);
+	$sql="select * from shipment where serial= '$serial'";
+	$res=connect($sql);
 while($id=mysql_fetch_array($res))
 {
 	$currmedia=$id['media'];
