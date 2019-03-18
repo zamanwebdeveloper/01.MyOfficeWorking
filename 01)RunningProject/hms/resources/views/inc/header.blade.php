@@ -17,13 +17,13 @@
 
                         <a href="#" class="user_action_image">
 
-                            {{--@if(Auth::user()->image == 'user.jpg')
+                            @if(Auth::user()->image == 'user.jpg')
                                 <img class="md-user-image" src="{{ url('admin/assets/img/avatars/user-2.png') }}">
                             @else
                                 <img class="md-user-image" src="{{ url('uploads/users/'.Auth::user()->image) }}" alt="">
-                            @endif--}}
+                            @endif
 
-                            <img class="md-user-image" src="{{ url('img/user.png') }}" alt="not">
+                            <!-- <img class="md-user-image" src="{{ url('img/user.png') }}" alt="not"> -->
                         </a>
 
                         <div class="uk-dropdown uk-dropdown-small">
