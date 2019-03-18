@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 18, 2019 at 01:08 PM
+-- Generation Time: Mar 18, 2019 at 01:34 PM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 5.6.40
 
@@ -77,7 +77,18 @@ INSERT INTO `access_level` (`id`, `create`, `read`, `update`, `delete`, `module_
 (40, 0, 0, 0, 0, 8, 7, '2019-02-01 10:37:23', '2019-02-01 10:37:23'),
 (41, 0, 0, 0, 0, 9, 7, '2019-02-01 10:37:23', '2019-02-01 10:37:23'),
 (42, 0, 0, 0, 0, 10, 7, '2019-02-01 10:37:23', '2019-02-01 10:37:23'),
-(43, 0, 0, 0, 0, 11, 7, '2019-02-01 10:37:23', '2019-02-01 10:37:23');
+(43, 0, 0, 0, 0, 11, 7, '2019-02-01 10:37:23', '2019-02-01 10:37:23'),
+(44, 0, 0, 0, 0, 1, 8, '2019-03-18 12:23:21', '2019-03-18 12:23:21'),
+(45, 0, 0, 0, 0, 2, 8, '2019-03-18 12:23:21', '2019-03-18 12:23:21'),
+(46, 0, 0, 0, 0, 3, 8, '2019-03-18 12:23:21', '2019-03-18 12:23:21'),
+(47, 0, 0, 0, 0, 4, 8, '2019-03-18 12:23:21', '2019-03-18 12:23:21'),
+(48, 0, 0, 0, 0, 5, 8, '2019-03-18 12:23:21', '2019-03-18 12:23:21'),
+(49, 0, 0, 0, 0, 6, 8, '2019-03-18 12:23:21', '2019-03-18 12:23:21'),
+(50, 0, 0, 0, 0, 7, 8, '2019-03-18 12:23:22', '2019-03-18 12:23:22'),
+(51, 0, 0, 0, 0, 8, 8, '2019-03-18 12:23:22', '2019-03-18 12:23:22'),
+(52, 0, 0, 0, 0, 9, 8, '2019-03-18 12:23:22', '2019-03-18 12:23:22'),
+(53, 0, 0, 0, 0, 10, 8, '2019-03-18 12:23:22', '2019-03-18 12:23:22'),
+(54, 0, 0, 0, 0, 11, 8, '2019-03-18 12:23:22', '2019-03-18 12:23:22');
 
 -- --------------------------------------------------------
 
@@ -776,7 +787,8 @@ INSERT INTO `roles` (`id`, `name`, `description`, `created_at`, `updated_at`) VA
 (2, 'Staff', 'Id eum id est eos. Distinctio rem ut fugiat sequi perspiciatis voluptatem nostrum. Et excepturi iusto veritatis ut ut. Eum nihil veritatis dolore qui qui ut.', '2004-02-22 19:07:54', '2016-03-06 16:07:19'),
 (3, 'Employee', 'Sint expedita eaque nemo quis. Ut nobis esse nobis et delectus a maiores ducimus. Inventore debitis error earum reprehenderit laudantium.', '1991-12-30 07:12:04', '2003-03-16 12:57:58'),
 (4, 'Patient', 'Patient role', '2019-01-31 16:00:03', '2019-01-31 16:00:03'),
-(7, 'Security Gurd', 'sdfksdjlfsd', '2019-02-01 10:37:23', '2019-02-01 10:37:23');
+(7, 'Security Gurd', 'sdfksdjlfsd', '2019-02-01 10:37:23', '2019-02-01 10:37:23'),
+(8, 'Reception', 'To Receive the Patients information.   ', '2019-03-18 12:23:21', '2019-03-18 12:23:21');
 
 -- --------------------------------------------------------
 
@@ -941,8 +953,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `email`, `password`, `permissions`, `last_login`, `first_name`, `note`, `role_id`, `branch_id`, `contact`, `image`, `name`, `remember_token`, `last_name`, `created_at`, `updated_at`) VALUES
-(1, 'zamanwebdeveloper@gmail.com', '$2y$10$uGVQmpGVG3gnav6YoUbKVeu31ilT8r9ENInQAwFhOCELzi6AhXddG', NULL, NULL, NULL, 'I am Professional Web Developer', 1, NULL, 1740301579, 'SyedZaman_fce7c9c247ebc10ef1275d3330c4f149b3df4c7a.jpg', 'Syed Zaman Mostafiz', 'reB6IjM0VMKrHDkLPzdcCbAAFveZVfz0SqvEKOwx5WNKy9yp6NaESu4WNwAT', NULL, '2018-10-10 17:22:23', '2019-03-18 12:06:07'),
-(2, 'rahim@gmail.com', '$2y$10$jyf07tW6DqHEEIBJcwPHV.RLDyTER6sX2Hpq31B5.FWi7tjJDhZ5m', NULL, NULL, NULL, 'note', 2, 1, 1520252525, 'user.jpg', 'Rahim', 'd7c3WVgzqHcKkLoVC3rS8bFTKAkhzwQoIPaONENqIDyrn2txwpW7KUZHb6ii', NULL, '2019-01-31 15:49:03', '2019-02-01 13:07:19'),
+(1, 'zamanwebdeveloper@gmail.com', '$2y$10$RSSBV43yjUw6pq1JtiieJuEV1Yv3w4LVkyyH63IpI6vazAKbGkMyK', NULL, NULL, NULL, 'I am Professional Web Developer', 1, NULL, 1740301579, 'SyedZaman_fce7c9c247ebc10ef1275d3330c4f149b3df4c7a.jpg', 'Syed Zaman Mostafiz', 'HWXoXX9nTNpbaOEW6U9LLCWunG0y2yZIMy5oW4B1nrArbEiAtbat1d9jX4Kg', NULL, '2018-10-10 17:22:23', '2019-03-18 12:33:21'),
+(2, 'rahim@gmail.com', '$2y$10$Z60m1GKj9L9JfA4oMzR4r.QM5odG8IjgewNTLMm5m4yruM7bkulIe', NULL, NULL, NULL, 'note', 8, 1, 1520252525, 'user.jpg', 'Rahim', 'd7c3WVgzqHcKkLoVC3rS8bFTKAkhzwQoIPaONENqIDyrn2txwpW7KUZHb6ii', NULL, '2019-01-31 15:49:03', '2019-03-18 12:29:07'),
 (3, 'zamancsediue44@gmail.com', '$2y$10$kPDbqB3yurLWFQcC0FCgNu83lHyuYyQXOVtb8ktDtC3KX3g6V.z8C', NULL, NULL, NULL, '', 2, 1, 1740301579, 'Zaman_87fe3c4222caf918ee2598ba4b4fa7f7409e024b.jpg', 'Syed Zaman Mostafiz', 'T15PBRdGfymRgigNnR2T2Yarlb3r7jzjop4P3QKg6wWa2f3WfpZh1p6f6rMQ', NULL, '2019-02-02 22:31:19', '2019-02-02 22:33:14');
 
 -- --------------------------------------------------------
@@ -1247,7 +1259,7 @@ ALTER TABLE `ward_beds`
 -- AUTO_INCREMENT for table `access_level`
 --
 ALTER TABLE `access_level`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
 
 --
 -- AUTO_INCREMENT for table `bill`
@@ -1361,7 +1373,7 @@ ALTER TABLE `prescription_medicines`
 -- AUTO_INCREMENT for table `roles`
 --
 ALTER TABLE `roles`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `stuffs`
